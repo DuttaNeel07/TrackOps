@@ -1,0 +1,20 @@
+{
+  "name": "trackops",
+  "version": "1.0.0",
+  "description": "A project management system",
+  "homepage": "https://github.com/DuttaNeel07/TrackOps#readme",
+  "bugs": {
+    "url": "https://github.com/DuttaNeel07/TrackOps/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DuttaNeel07/TrackOps.git"
+  },
+  "license": "ISC",
+  "author": "Neel Dutta",
+  "main": "index.js",
+  "type": "module", 
+  "scripts": {
+    "dev": "node index.js"
+  }
+}
