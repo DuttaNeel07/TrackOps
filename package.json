@@ -13,8 +13,17 @@
   "license": "ISC",
   "author": "Neel Dutta",
   "main": "index.js",
-  "type": "module", 
+  "type": "module",
   "scripts": {
-    "dev": "node index.js"
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14",
+    "prettier": "3.6.2"
+  },
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1"
   }
 }

@@ -1,3 +1,4 @@
 .env
 /PRD.md
 .git
+node_modules
