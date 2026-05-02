@@ -10,24 +10,26 @@ app.use(express.static("public"));
 app.use(cookieParser());
 
 app.use(
-  cors({
-    origin: process.env.CORS_ORIGIN?.split(",") || "http://locahost:5173",
-    credentials: true,
-    methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
-    allowedHeaders: ["Content-Type", "Authorization"],
-  }),
+    cors({
+        origin: process.env.CORS_ORIGIN?.split(",") || "http://locahost:5173",
+        credentials: true,
+        methods: ["GET", "POST", "PUT", "PATCH", "DELETE", "OPTIONS"],
+        allowedHeaders: ["Content-Type", "Authorization"],
+    }),
 );
 
-import healthCheckRouter from "./routes/healthcheck.routes.js";
-import authRouter from "./routes/auth.routes.js";
-import projectRouter from "./routes/project.routes.js";
+import healthCheckRouter from "../routes/healthcheck.router.js";
+import authRouter from "../routes/auth.routes.js";
+import projectRouter from "../routes/project.routes.js";
+import taskRouter from "../routes/task.routes.js";
 
 app.use("/api/v1/healthcheck", healthCheckRouter);
 app.use("/api/v1/auth", authRouter);
+app.use("/api/v1/projects/:projectId/tasks", taskRouter);
 app.use("/api/v1/projects", projectRouter);
 
 app.get("/", (req, res) => {
-  res.send("Welcome to basecampy");
+    res.send("Helloww!");
 });
 
 export default app;
