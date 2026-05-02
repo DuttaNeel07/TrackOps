@@ -1,31 +1,33 @@
 {
-  "name": "trackops",
-  "version": "1.0.0",
-  "description": "A project management system",
-  "homepage": "https://github.com/DuttaNeel07/TrackOps#readme",
-  "bugs": {
-    "url": "https://github.com/DuttaNeel07/TrackOps/issues"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/DuttaNeel07/TrackOps.git"
-  },
-  "license": "ISC",
-  "author": "Neel Dutta",
-  "main": "index.js",
-  "type": "module",
-  "scripts": {
-    "dev": "nodemon src/index.js",
-    "start": "node src/index.js"
-  },
-  "devDependencies": {
-    "nodemon": "^3.1.14",
-    "prettier": "3.6.2"
-  },
-  "dependencies": {
-    "bcrypt": "^6.0.0",
-    "dotenv": "^17.4.2",
-    "express": "^5.2.1",
-    "nodemailer": "^8.0.7"
-  }
+    "name": "trackops",
+    "version": "1.0.0",
+    "description": "A project management system",
+    "homepage": "https://github.com/DuttaNeel07/TrackOps#readme",
+    "bugs": {
+        "url": "https://github.com/DuttaNeel07/TrackOps/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/DuttaNeel07/TrackOps.git"
+    },
+    "license": "ISC",
+    "author": "Neel Dutta",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "dev": "nodemon src/index.js",
+        "start": "node src/index.js"
+    },
+    "devDependencies": {
+        "nodemon": "^3.1.14",
+        "prettier": "3.6.2"
+    },
+    "dependencies": {
+        "bcrypt": "^6.0.0",
+        "dotenv": "^17.4.2",
+        "express": "^5.2.1",
+        "mongoose": "^9.6.1",
+        "multer": "^2.1.1",
+        "nodemailer": "^8.0.7"
+    }
 }
